@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form id="form-login">
+            <div>
+                <label for="nombre-login">Nombre</label>
+                <!-- <input type="text" id="nombre-login" minlength="8" maxlength="20" /> -->
+                <input type="text" id="nombre-login" minlength="8" maxlength="20" title="Debe de tener mínimo 8 caracteres y máximo 20, sin espacios" required/>
+            </div>
+            <div>
+                <label for="pass-login">Contraseña</label>
+                <!-- <input type="password" id="pass-login" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe de tener mínimo 8 caracteres, un número y una mayúscula" required/> -->
+                <input type="password" id="pass-login" minlength="8" maxlength="16" title="Debe de tener mínimo 8 caracteres y máximo 16, debe incluir al menos un número y una mayúscula" required />
+            </div>
+           <div>
+                <label for="email-login">Correo electronico</label>
+               <!-- <input type="email" id="email" name="email-login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/> -->
+                <input type="email" id="email-login" required/>
+            </div>
+            <div>
+                <label for="nacimiento-login">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento-login" required>
+            </div>
+            <div class="div-submit">
+                <input type="submit" value="Iniciar Sesion" style="background-color:transparent"/>
+            </div>
+        </form>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+form{
+    border-radius: 5px;
+    border-width: medium;
+    border-style: double;
+    text-align: center;
+    padding: 30px;
+}
+
+label{
+    float: left;
+    clear: both;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"]{
+    float: right;
+}
+
+input[type="submit"]{
+    clear: both;
+    display: block;
+    align-content: center;
+}
+
+/*input:valid {
+    background-color: palegreen;
+}*/
+
+input:invalid {
+    background-color: lightpink;
+}
+
+/*.div-submit {
+    border-width: thin;
+    border: 5px outset red;
+    background-color: lightblue;    
+    text-align: center;
+}*/
